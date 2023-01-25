@@ -28,6 +28,9 @@ The following limitations apply:
 * A single route table can be attached to a subnet
 * A route table supports up to 400 routes
 
+> [!NOTE]
+> If it is necessary for UDR, NSG to effect the private endpoint, or you don't want to reach the 400 route limits per route table, please use Network policies for private endpoints (https://learn.microsoft.com/en-us/azure/private-link/disable-private-endpoint-network-policy?tabs=network-policy-portal)
+
 Azure Firewall filters traffic using either:
 
 * [FQDN in network rules](../firewall/fqdn-filtering-network-rules.md) for TCP and UDP protocols
